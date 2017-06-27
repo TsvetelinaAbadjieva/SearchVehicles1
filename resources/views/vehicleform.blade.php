@@ -117,7 +117,7 @@
                             <p><span>Двигател</span><span>&nbsp;{{$car->engine_type}}</span></p>
                             <p><span>Цвят</span><span>&nbsp;<input type="color" value="{{$car->color}}"></span></p>
                             <p><span>Име на цвят</span><span>&nbsp;{{$car->color_name}}</span></p>
-                            <p><span>Цена</span><span>&nbsp;{{$car->price}} &euro;</span></p>
+                            <p><span>Цена</span><span>&nbsp;{{ceil($car->price)}} &dollar;</span></p>
                             <p>
                                 <button type="btn" id="{{$car->id}}" class="btn btn-default form-group glyphicon glyphicon-pencil edit"  style="width:150px;" >Промяна</button>
 
